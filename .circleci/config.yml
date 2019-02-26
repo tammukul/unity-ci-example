@@ -3,7 +3,7 @@ version: 2.1
 executors:
   unity_exec:
     docker:
-      - image: gableroux/unity3d:2018.3.4f1
+      - image: gableroux/unity3d:2018.3.6f1
     environment:
       BUILD_NAME: ExampleProjectName
 
