@@ -8,4 +8,4 @@ set +x
 echo 'Writing $UNITY_LICENSE_CONTENT to license file /root/.local/share/unity3d/Unity/Unity_lic.ulf'
 echo 'Unity License content is'
 echo $UNITY_LICENSE_CONTENT
-echo "$UNITY_LICENSE_CONTENT" | base64 -di | tr -d '\r' > /root/.local/share/unity3d/Unity/Unity_lic.ulf
+base64 -d ./ci/uv.ulf > /root/.local/share/unity3d/Unity/Unity_lic.ulf
